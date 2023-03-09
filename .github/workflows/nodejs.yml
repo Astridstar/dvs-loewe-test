@@ -64,13 +64,13 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Generate package 
-        run: npm run build
-      - name: Check package
+      - name: Preparation for package generation
         run: |
           ls -la
           mkdir ./node_modules/static
-          ln -s ../../public/static/icon_logo.png
+          ln -s ../../public/static/icon_logo.png        
+      - name: Generate package 
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
