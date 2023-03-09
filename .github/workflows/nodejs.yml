@@ -68,7 +68,7 @@ jobs:
         run: |
           ls -la
           mkdir ./node_modules/static
-          ln -s ../../public/static/icon_logo.png        
+          ln -s ../../public/static/icon_logo.png ./node_modules/static/icon_logo.png      
       - name: Generate package 
         run: npm run build
       - name: Upload artifact
