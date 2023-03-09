@@ -69,6 +69,8 @@ jobs:
       - name: Check package
         run: |
           ls -la
+          mkdir ./node_modules/static
+          ln -s ../../public/static/icon_logo.png
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
