@@ -69,8 +69,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./out
-
+          path: ./build
+          name: github-pages
+          retention-days: 1
   # Deployment job
   deploy:
     environment:
