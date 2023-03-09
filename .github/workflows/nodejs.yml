@@ -43,6 +43,11 @@ jobs:
       # - name: Run npm build
       #   run: npm run build
 
+      - run : git config user.name github-actions
+        shell: bash
+      - run : git config user.email github-actions@github.com
+        shell: bash
+        
       - name: Deploy github-pages 
         id: deployment
         run: npm run deploy
