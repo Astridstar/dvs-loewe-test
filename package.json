@@ -1,7 +1,7 @@
 {
   "name": "approvals",
   "version": "0.1.0",
-  "homepage": "https://pcs-security.github.io/devops-spa-page"
+  "homepage": "https://pcs-security.github.io/devops-spa-page",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
