@@ -1,7 +1,7 @@
 {
   "name": "approvals",
   "version": "0.1.0",
-  "homepage": "https://astridstar.github.io/dvs-loewe-test",
+  "homepage": "https://pcs-security.github.io/devops-spa-page"
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
